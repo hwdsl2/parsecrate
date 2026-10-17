@@ -1,10 +1,10 @@
-[English](README.md) | [简体中文](README-zh.md) | [繁體中文](README-zh-Hant.md) | [Русский](README-ru.md)
+[English](../README.md) | [简体中文](README-zh.md) | [繁體中文](README-zh-Hant.md) | [Русский](README-ru.md)
 
 # ParseCrate
 
 **开源、自托管的文档处理 API。**
 
-[![构建状态](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](docs/images/license.svg)](https://opensource.org/licenses/MIT)
+[![构建状态](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](images/license.svg)](https://opensource.org/licenses/MIT)
 
 ParseCrate 是一个自托管的文档处理 API，由 [Docling](https://github.com/docling-project/docling) 和 [docling-serve](https://github.com/docling-project/docling-serve) 提供支持。可在自己的服务器上将 PDF、DOCX、PPTX、XLSX、HTML、Markdown、LaTeX 及其他支持的格式转换为结构化的 Markdown、JSON 或 HTML。可使用 Docker 在 CPU 或 NVIDIA GPU 上部署。
 
@@ -22,13 +22,13 @@ ParseCrate 是一个自托管的文档处理 API，由 [Docling](https://github.
 - **离线运行：** 使用预先缓存的模型无需互联网访问 (`DOCLING_LOCAL_ONLY`)
 - **自动构建：** 通过 [GitHub Actions](https://github.com/hwdsl2/parsecrate/actions) 自动构建和发布
 
-也可作为 [Self-Hosted AI Stack](https://github.com/hwdsl2/self-hosted-ai-stack/blob/main/README-zh.md) 的一部分使用，一条命令即可部署完整的自托管 AI 技术栈。
+也可作为 [Self-Hosted AI Stack](https://github.com/hwdsl2/self-hosted-ai-stack/blob/main/docs/README-zh.md) 的一部分使用，一条命令即可部署完整的自托管 AI 技术栈。
 
 > 📘 [The Self-Hosted AI Builder’s Guide](https://books2read.com/aiguide?store=amazon) 是一本关于构建、保护和运维自己的私有 AI 技术栈的实用指南。
 
 **另提供：**
 
-- 相关 AI 服务：[ScribeCrate](https://github.com/hwdsl2/scribecrate/blob/main/README-zh.md)、[SpeakCrate](https://github.com/hwdsl2/speakcrate/blob/main/README-zh.md)、[EmbedCrate](https://github.com/hwdsl2/embedcrate/blob/main/README-zh.md)、[GatewayCrate](https://github.com/hwdsl2/gatewaycrate/blob/main/README-zh.md)、[InferCrate](https://github.com/hwdsl2/infercrate/blob/main/README-zh.md)、[UplinkCrate](https://github.com/hwdsl2/uplinkcrate/blob/main/README-zh.md)
+- 相关 AI 服务：[ScribeCrate](https://github.com/hwdsl2/scribecrate/blob/main/docs/README-zh.md)、[SpeakCrate](https://github.com/hwdsl2/speakcrate/blob/main/docs/README-zh.md)、[EmbedCrate](https://github.com/hwdsl2/embedcrate/blob/main/docs/README-zh.md)、[GatewayCrate](https://github.com/hwdsl2/gatewaycrate/blob/main/docs/README-zh.md)、[InferCrate](https://github.com/hwdsl2/infercrate/blob/main/docs/README-zh.md)、[UplinkCrate](https://github.com/hwdsl2/uplinkcrate/blob/main/docs/README-zh.md)
 
 ## 快速开始
 
@@ -139,9 +139,9 @@ curl -X POST http://您的服务器IP:5001/v1/convert/source \
 
 - [Setup IPsec VPN](https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/README-zh.md)
 - [Docker 上的 IPsec VPN](https://github.com/hwdsl2/docker-ipsec-vpn-server/blob/master/README-zh.md)
-- [WireGuard](https://github.com/hwdsl2/docker-wireguard/blob/main/README-zh.md)
-- [OpenVPN](https://github.com/hwdsl2/docker-openvpn/blob/main/README-zh.md)
-- [Headscale](https://github.com/hwdsl2/docker-headscale/blob/main/README-zh.md)
+- [WireGuard](https://github.com/hwdsl2/docker-wireguard/blob/main/docs/README-zh.md)
+- [OpenVPN](https://github.com/hwdsl2/docker-openvpn/blob/main/docs/README-zh.md)
+- [Headscale](https://github.com/hwdsl2/docker-headscale/blob/main/docs/README-zh.md)
 
 </details>
 
@@ -189,7 +189,7 @@ docker pull hwdsl2/docling-server:cuda
 
 所有变量均为可选。挂载 `/var/lib/docling` 数据卷的新安装会自动生成 API 密钥。没有密钥的既有安装会保持开放以兼容旧行为。
 
-此 Docker 镜像使用以下变量，可在 `env` 文件中声明（参见[示例](docling.env.example)）：
+此 Docker 镜像使用以下变量，可在 `env` 文件中声明（参见[示例](../docling.env.example)）：
 
 | 变量 | 说明 | 默认值 |
 |---|---|---|
@@ -516,7 +516,7 @@ docker rm -f docling
 
 ParseCrate 可作为更广泛的自托管 AI 设置中的文档转换服务。
 
-如需完整和轻量级 Docker Compose 技术栈、手动 `docker run` 示例，以及结合 SpeakCrate、EmbedCrate、GatewayCrate、InferCrate、ParseCrate 和 UplinkCrate 的语音/RAG/MCP 流水线示例，请参阅 [Self-Hosted AI Stack](https://github.com/hwdsl2/self-hosted-ai-stack/blob/main/README-zh.md)。
+如需完整和轻量级 Docker Compose 技术栈、手动 `docker run` 示例，以及结合 SpeakCrate、EmbedCrate、GatewayCrate、InferCrate、ParseCrate 和 UplinkCrate 的语音/RAG/MCP 流水线示例，请参阅 [Self-Hosted AI Stack](https://github.com/hwdsl2/self-hosted-ai-stack/blob/main/docs/README-zh.md)。
 
 ## 使用计数
 
