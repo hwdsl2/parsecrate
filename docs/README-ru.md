@@ -4,7 +4,7 @@
 
 **API обработки документов с открытым исходным кодом для размещения на собственном сервере.**
 
-[![Статус сборки](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](images/license.svg)](https://opensource.org/licenses/MIT)
+[![Статус сборки](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](images/license.svg)](https://opensource.org/licenses/MIT) &nbsp;[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://selfhostedaistack.com/parsecrate-notebook)
 
 ParseCrate представляет собой API обработки документов для размещения на собственном сервере на базе [Docling](https://github.com/docling-project/docling) и [docling-serve](https://github.com/docling-project/docling-serve). Преобразует PDF, DOCX, PPTX, XLSX, HTML, Markdown, LaTeX и другие поддерживаемые форматы в структурированный Markdown, JSON или HTML на вашем сервере. Развёртывается с помощью Docker на CPU или NVIDIA GPU.
 
@@ -28,6 +28,7 @@ ParseCrate представляет собой API обработки докум
 
 **Также доступно:**
 
+- Попробовать онлайн: [Открыть в Colab](https://selfhostedaistack.com/parsecrate-notebook) — Docker и локальная установка не требуются
 - Связанные AI-сервисы: [ScribeCrate](https://github.com/hwdsl2/scribecrate/blob/main/docs/README-ru.md), [SpeakCrate](https://github.com/hwdsl2/speakcrate/blob/main/docs/README-ru.md), [EmbedCrate](https://github.com/hwdsl2/embedcrate/blob/main/docs/README-ru.md), [GatewayCrate](https://github.com/hwdsl2/gatewaycrate/blob/main/docs/README-ru.md), [InferCrate](https://github.com/hwdsl2/infercrate/blob/main/docs/README-ru.md), [UplinkCrate](https://github.com/hwdsl2/uplinkcrate/blob/main/docs/README-ru.md)
 
 ## Быстрый старт

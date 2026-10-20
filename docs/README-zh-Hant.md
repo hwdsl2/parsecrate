@@ -4,7 +4,7 @@
 
 **開源、自託管的文件處理 API。**
 
-[![建置狀態](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](images/license.svg)](https://opensource.org/licenses/MIT)
+[![建置狀態](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](images/license.svg)](https://opensource.org/licenses/MIT) &nbsp;[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://selfhostedaistack.com/parsecrate-notebook)
 
 ParseCrate 是一個自託管的文件處理 API，由 [Docling](https://github.com/docling-project/docling) 和 [docling-serve](https://github.com/docling-project/docling-serve) 提供支援。可在自己的伺服器上將 PDF、DOCX、PPTX、XLSX、HTML、Markdown、LaTeX 及其他支援的格式轉換為結構化的 Markdown、JSON 或 HTML。可使用 Docker 在 CPU 或 NVIDIA GPU 上部署。
 
@@ -28,6 +28,7 @@ ParseCrate 是一個自託管的文件處理 API，由 [Docling](https://github.
 
 **另提供：**
 
+- 線上試用：[在 Colab 中開啟](https://selfhostedaistack.com/parsecrate-notebook)——無需 Docker 或本機安裝
 - 相關 AI 服務：[ScribeCrate](https://github.com/hwdsl2/scribecrate/blob/main/docs/README-zh-Hant.md)、[SpeakCrate](https://github.com/hwdsl2/speakcrate/blob/main/docs/README-zh-Hant.md)、[EmbedCrate](https://github.com/hwdsl2/embedcrate/blob/main/docs/README-zh-Hant.md)、[GatewayCrate](https://github.com/hwdsl2/gatewaycrate/blob/main/docs/README-zh-Hant.md)、[InferCrate](https://github.com/hwdsl2/infercrate/blob/main/docs/README-zh-Hant.md)、[UplinkCrate](https://github.com/hwdsl2/uplinkcrate/blob/main/docs/README-zh-Hant.md)
 
 ## 快速開始

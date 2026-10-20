@@ -4,7 +4,7 @@
 
 **Open-source, self-hosted document processing API.**
 
-[![Build Status](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](docs/images/license.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml/badge.svg)](https://github.com/hwdsl2/parsecrate/actions/workflows/main.yml) &nbsp;[![Docker Pulls](https://raw.githubusercontent.com/hwdsl2/badges/main/img/docker-pulls-docling-server.svg)](https://hub.docker.com/r/hwdsl2/docling-server) &nbsp;[![License: MIT](docs/images/license.svg)](https://opensource.org/licenses/MIT) &nbsp;[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://selfhostedaistack.com/parsecrate-notebook)
 
 ParseCrate is a self-hosted document processing API powered by [Docling](https://github.com/docling-project/docling) and [docling-serve](https://github.com/docling-project/docling-serve). Convert PDF, DOCX, PPTX, XLSX, HTML, Markdown, LaTeX, and other supported formats into structured Markdown, JSON, or HTML on your own server. Deploy with Docker on CPU or an NVIDIA GPU.
 
@@ -28,6 +28,7 @@ Also available as part of the [Self-Hosted AI Stack](https://github.com/hwdsl2/s
 
 **Also available:**
 
+- Try it online: [Open in Colab](https://selfhostedaistack.com/parsecrate-notebook) — no Docker or local installation required
 - Related AI services: [ScribeCrate](https://github.com/hwdsl2/scribecrate), [SpeakCrate](https://github.com/hwdsl2/speakcrate), [EmbedCrate](https://github.com/hwdsl2/embedcrate), [GatewayCrate](https://github.com/hwdsl2/gatewaycrate), [InferCrate](https://github.com/hwdsl2/infercrate), [UplinkCrate](https://github.com/hwdsl2/uplinkcrate)
 
 ## Quick start
