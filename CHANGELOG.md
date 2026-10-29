@@ -11,6 +11,13 @@ Release: `2026.10.1`
 - Established the first tagged source release. Docker images continue to update
   independently through existing moving tags.
 
+## 2026-10-19
+
+### Added
+
+- Added a Google Colab demo for document conversion to Markdown and
+  structured JSON, with sample documents and authenticated API examples.
+
 ## 2026-10-07
 
 ### Changed
