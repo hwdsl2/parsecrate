@@ -154,7 +154,6 @@ curl -X POST http://your_server_ip:5001/v1/convert/source \
 - A Linux server (local or cloud) with Docker installed
 - Supported architectures: `amd64` (x86_64), `arm64` (aarch64)
 - Minimum RAM: ~2 GB free (for CPU inference with default models)
-- Disk: ~4 GB for the Docker image
 - Internet access is NOT required for document conversion (models are baked into the image). Internet is needed only if fetching documents from URLs.
 
 **For GPU acceleration (`:cuda` image):**

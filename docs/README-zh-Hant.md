@@ -154,7 +154,6 @@ curl -X POST http://您的伺服器IP:5001/v1/convert/source \
 - 已安裝 Docker 的 Linux 伺服器（本機或雲端）
 - 支援的架構：`amd64`（x86_64）、`arm64`（aarch64）
 - 最低記憶體：約 2 GB 可用（使用預設模型進行 CPU 推論）
-- 磁碟：Docker 映像約 4 GB
 - 文件轉換**不需要**網際網路連線（模型已內建在映像中）。僅在從 URL 取得文件時需要網路。
 
 **GPU 加速（`:cuda` 映像）需求：**

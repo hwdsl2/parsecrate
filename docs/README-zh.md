@@ -154,7 +154,6 @@ curl -X POST http://您的服务器IP:5001/v1/convert/source \
 - 已安装 Docker 的 Linux 服务器（本地或云端）
 - 支持的架构：`amd64`（x86_64）、`arm64`（aarch64）
 - 最低内存：约 2 GB 可用（使用默认模型进行 CPU 推理）
-- 磁盘：Docker 镜像约 4 GB
 - 文档转换**不需要**互联网访问（模型已内置在镜像中）。仅在从 URL 获取文档时需要网络。
 
 **GPU 加速（`:cuda` 镜像）要求：**
