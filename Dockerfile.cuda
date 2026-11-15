@@ -24,7 +24,10 @@ RUN dnf install -y ca-certificates \
 COPY ./run.sh /opt/src/run.sh
 COPY ./manage.sh /opt/src/manage.sh
 COPY ./LICENSE.md /opt/src/LICENSE.md
-RUN chmod 755 /opt/src/run.sh /opt/src/manage.sh \
+RUN mkdir -p /run/docling-secrets \
+    && chmod 700 /run/docling-secrets \
+    && chown 1001:0 /run/docling-secrets \
+    && chmod 755 /opt/src/run.sh /opt/src/manage.sh \
     && ln -s /opt/src/manage.sh /usr/local/bin/docling_manage
 
 # Switch back to non-root user

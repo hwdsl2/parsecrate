@@ -78,6 +78,12 @@ load_config() {
     DOCLING_AUTH_ENABLED=$(cat "$AUTH_ENABLED_FILE")
   fi
 
+  # Read the startup snapshot, never the possibly edited external file.
+  if [ -f /run/docling-secrets/api_key ]; then
+    DOCLING_AUTH_ENABLED=1
+    DOCLING_API_KEY=$(cat /run/docling-secrets/api_key) || exiterr "Cannot read active API key."
+  fi
+
   if [ "$DOCLING_AUTH_ENABLED" != 0 ] && [ -z "$DOCLING_API_KEY" ] && [ -f "$API_KEY_FILE" ]; then
     DOCLING_API_KEY=$(cat "$API_KEY_FILE")
   fi
@@ -173,7 +179,11 @@ do_show_key() {
   echo "${DOCLING_API_KEY}"
   echo "==========================================================="
   echo
+  if [ -f /run/docling-secrets/api_key ]; then
+    printf 'Use with: -H %q\n' "X-Api-Key: ${DOCLING_API_KEY}"
+  else
   echo "Use with: -H \"X-Api-Key: ${DOCLING_API_KEY}\""
+  fi
   echo
 }
 
